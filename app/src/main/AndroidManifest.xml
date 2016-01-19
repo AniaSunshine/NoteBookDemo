@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hao.notebookdemo">
 
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,8 +21,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ModifyNoteActivity"></activity>
-        <activity android:name=".WriteNoteActivity"></activity>
+        <activity android:name=".notebook.ModifyNoteActivity"></activity>
+        <activity android:name=".notebook.NoteListActivity"></activity>
+        <activity android:name=".notebook.WriteNoteActivity"></activity>
+        <activity android:name=".test.AActivity"></activity>
+        <activity android:name=".test.BActivity"></activity>
+
+
     </application>
 
 </manifest>
